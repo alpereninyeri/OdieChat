@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="unload=()">
+    <title>Odie - Kılıç Agency AI Asistanı</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page" id="landing-page">
+        <div class="landing-content">
+            <h1 class="main-title">Merhaba, ben Odie.</h1>
+            <div class="typing-container">
+                <span class="typing-text" id="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input type="text" id="chat-input" placeholder="Odie'ye bir mesaj yaz..." autocomplete="off">
+                <button id="send-btn" class="send-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p class="copyright">© 2025 Kılıç Agency. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+
+    <!-- Chat Interface (Hidden initially) -->
+    <div class="chat-interface" id="chat-interface" style="display: none;">
+        <div class="chat-header">
+            <div class="logo-container">
+                <img src="logo.png" alt="Kılıç Agency Logo" class="logo">
+            </div>
+            <h1 class="chat-title">Odie</h1>
+            <div class="chat-subtitle">Kılıç Agency AI Asistanı</div>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will be added here -->
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="nav-links" id="nav-links">
+            <a href="#" class="nav-link">Portfolyo</a>
+            <a href="#" class="nav-link">Referanslarımız</a>
+            <a href="#" class="nav-link">Bize Ulaşın</a>
+        </div>
+        
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input type="text" id="chat-input-chat" placeholder="Odie'ye bir mesaj yaz..." autocomplete="off">
+                <button id="send-btn-chat" class="send-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "odie-landing",
+  "version": "1.0.0",
+  "description": "Odie - Kılıç Agency AI Asistanı",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "start": "npx serve ."
+  },
+  "keywords": ["ai", "assistant", "chat", "kılıç-agency"],
+  "author": "Kılıç Agency",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
